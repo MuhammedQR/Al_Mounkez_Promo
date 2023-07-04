@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl">
 
 <head>
   <meta charset="utf-8">
@@ -32,20 +32,23 @@
 
 </head>
 
-<body dir="rtl">
+<body >
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center" dir="rtl" >
+  <header id="header" class="header d-flex align-items-center position-fixed"  >
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar ">
-        <ul class="d-xxl-flex flex-row-reverse ">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="Interns.html">المتدربيين</a></li>
-          <li class="dropdown"><a href="products.html"  class="active"><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+     
+      
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <nav id="navbar  " class="navbar ">
+        <ul class="d-lg-flex ">
+          <li><a href="index.html" >الرئيسية</a></li>
+          <li><a href="interns.html">المتدربيين</a></li>
+          <li class="dropdown"><a href="products.html" class="active"><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="productsDetails_1.html" >نظام إدارة موارد المؤسسات</a></li>
+              <li><a href="productsDetails_1.html">نظام إدارة موارد المؤسسات</a></li>
               <li><a href="productsDetails_2.html">نظام إدارة الخزينة</a></li>
               <li><a href="productsDetails_3.html">نظام إدارة الموجودات الثابتة</a></li>
               <li><a href="productsDetails_4.html">نظام إدارة الموارد البشرية</a></li>
@@ -56,15 +59,11 @@
          
         </ul>
       </nav><!-- .navbar -->
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>الأنظمة المتجددة</h1>
-      </a>
-
-    
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
   </header><!-- End Header -->
+
 
   <main id="main">
 
@@ -92,7 +91,7 @@
             <article class="blog-details">
 
               <div class="post-img">
-                <img src="assets/img/blog/blog_4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/products/4.svg" alt="" class="img-fluid">
               </div>
 
               <h2 class="title">نظام إلكتروني متكامل لإدارة الموارد البشرية شامل لجميع المهام والاحتياجات الموكلة لقسم الموارد البشرية ابتداءً من:</h2>
@@ -118,9 +117,9 @@
                   إن الإحصائيات المتكاملة عن الموظفين والرواتب والتي تتوفر بشكل جداول ورسوم بيانية ؛ والتقارير التي يدعمها النظام والتي تولد بشكل تلقائي من البيانات المدخلة تعتبر من أهم نتائج هذا النظام وذلك لتوفيرها الوقت الكبير والجهد الذي تقوم به إدارة الموارد البشرية ويقدم العديد من الإحصائيات التي يمكن اعتمادها من قبل الإدارة في اتخاذ القرارات الهامة .
                 </p>
 
-                <h3 class="text-primary">  ميزات النظام : </h3>
+                <h3 >  ميزات النظام : </h3>
                 <hr>
-                <h4>قسم طلبات التوظيف : </h4>
+                <h5>قسم طلبات التوظيف : </h5>
                 <ul>
                   <li> أرشفة جميع طلبات التوظيف المقدمة للشركة بشكل كامل والاحتفاظ بصورة كاملة عنها .</li>
                   <li>  سهولة البحث عن المتقدمين للوظيفة المطلوبة حسب (الاختصاص ، العمر ، الجنسية ، الملاحظات ...الخ ) .</li>
@@ -147,28 +146,28 @@
                 <div class="mt-3">
 
                   <div class="post-item mt-3">
-                    <img src="assets/img/blog/blog_1.jpg" alt="">
+                    <img src="assets/img/products/1.svg" class="img-fluid w-100" alt="">
                     <div class="mx-3">
-                      <h4><a href="productsDetails_1.html">نظام إدارة موارد المؤسسات<</a></h4>
+                      <h4><a href="productsDetails_1.html">نظام إدارة موارد المؤسسات</a></h4>
                     </div>
                   </div><!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog_2.jpg" alt="">
+                    <img src="assets/img/products/2.svg" class="img-fluid w-100" alt="">
                     <div class="mx-3">
                       <h4><a href="productsDetails_2.html">نظام إدارة الخزينة</a></h4>
                     </div>
                   </div><!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog_3.jpg" alt="">
+                    <img src="assets/img/products/3.svg" class="img-fluid w-100" style="height: 50px;" alt="">
                     <div class="mx-3">
                       <h4><a href="productsDetails_3.html">نظام إدارة الموجودات الثابتة</a></h4>
                     </div>
                   </div><!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog_4.jpg" alt="">
+                    <img src="assets/img/products/4.svg" class="img-fluid w-100" alt="">
                     <div class="mx-3">
                       <h4><a href="productsDetails_4.html">نظام إدارة الموارد البشرية</a></h4>
                     </div>
@@ -198,7 +197,7 @@
 
         <div class="col-lg-4 col-md-6">
           <div class="footer-info">
-            <h3>الأنظمة المتجددة</h3>
+            <h3> شركة المنقذ</h3> 
             <p>
               ركن الدين شارع الحكيم<br>
               دمشق , سوريا<br><br>
@@ -221,8 +220,8 @@
           <ul>
             <li><a href="./index.html">الرئيسية</a></li>
             <li><a href="#services">الخدمات</a></li>
-            <li><a href="#"> المتدربين </a></li>
-            <li><a href="#contact">الاتصال بنا</a></li>
+            <li><a href="Interns.html"> المتدربين </a></li>
+            <li><a href="contact.html">الاتصال بنا</a></li>
           </ul>
         </div><!-- End footer links column-->
 
@@ -273,7 +272,9 @@
 
 </footer>
 <!-- End Footer -->
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div id="preloader"></div>
 
 
 <!-- Vendor JS Files -->

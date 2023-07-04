@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileNavToogle();
       }
     });
-
   });
 
   /**
@@ -204,3 +203,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+
+
+var nameField = document.getElementById('name');
+var nameError = document.querySelector('.error-message');
+
+nameField.addEventListener('blur', function(event) {
+  if (nameField.value.length < 10) {
+    nameError.style.display = 'block';
+  } else {
+    nameError.style.display = 'none';
+  }
+});
+
+
+var inputFields = document.querySelectorAll('input');
+
+for (var i = 0; i < inputFields.length; i++) {
+  inputFields[i].addEventListener('focus', function(event) {
+    changeBackground(this, 'LightGreen');
+  });
+
+  inputFields[i].addEventListener('blur', function(event) {
+    changeBackground(this, '#fff');
+  });
+}
+
+function changeBackground(element, color) {
+  element.style.backgroundColor = color;
+}

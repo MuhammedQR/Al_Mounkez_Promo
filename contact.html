@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> المنتجات </title>
+  <title> الاتصال بنا </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <style>
+  
+  </style>
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">  
  
@@ -32,18 +34,22 @@
 
 </head>
 
-<body dir="rtl">
+<body >
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center" dir="rtl" >
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center position-fixed"  >
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar ">
-        <ul class="d-xxl-flex flex-row-reverse ">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="Interns.html">المتدربيين</a></li>
-          <li class="dropdown"><a href="products.html" ><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+     
+      
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <nav id="navbar  " class="navbar ">
+        <ul class="d-lg-flex   ">
+          <li><a href="index.html" >الرئيسية</a></li>
+          <li><a href="interns.html">المتدربيين</a></li>
+          <li class="dropdown"><a href="products.html"><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="productsDetails_1.html">نظام إدارة موارد المؤسسات</a></li>
               <li><a href="productsDetails_2.html">نظام إدارة الخزينة</a></li>
@@ -51,25 +57,20 @@
               <li><a href="productsDetails_4.html">نظام إدارة الموارد البشرية</a></li>
             </ul>
           </li>
-          <li><a href="contact.html"  class="active">الاتصال بنا</a></li>
+          <li><a href="contact.html"class="active">الاتصال بنا</a></li>
 
          
         </ul>
       </nav><!-- .navbar -->
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>الأنظمة المتجددة</h1>
-      </a>
-
-    
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/12.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/blog/blog_1.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>الاتصال بنا</h2>
@@ -116,14 +117,17 @@
         <div class="row gy-4 mt-1">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/place/AlMounkez+Software/@33.545869,36.314465,18z/data=!4m6!3m5!1s0x1518e656d8f67ced:0x9c31a137201b71da!8m2!3d33.5458779!4d36.3145292!16s%2Fg%2F119wnq026?hl=ar&entry=ttu" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.287664363834!2d36.31667018532344!3d33.545901551690996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e656d8f67ced%3A0x9c31a137201b71da!2sAlMounkez+Software!5e0!3m2!1sar!2s!4v1451737990627" width="100%" height="100%" frameborder="0"  allowfullscreen></iframe>
+
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="الاسم" required>
+                  <input type="text" name="name" class="form-control" id="name"   placeholder="الاسم" required>
+               
                 </div>
                 <div class="col-lg-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="البريد الالكتروني" required>
@@ -136,10 +140,11 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="الرسالة" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <div class="loading">جاري الارسال</div>
+                <div class="error-message">يجب أن يحتوي الاسم على 8 أحرف على الأقل!</div>
                 <div class="sent-message">تم ارسال البريد , شكرا لك</div>
               </div>
+
               <div class="text-center"><button type="submit">ارسال</button></div>
             </form>
           </div><!-- End Contact Form -->
@@ -152,7 +157,7 @@
   </main><!-- End #main -->
 
  <!-- ======= Footer ======= -->
- <footer id="footer" class="footer" dir="rtl">
+ <footer id="footer" class="footer" >
 
   <div class="footer-content position-relative">
     <div class="container">
@@ -160,7 +165,7 @@
 
         <div class="col-lg-4 col-md-6">
           <div class="footer-info">
-            <h3>الأنظمة المتجددة</h3>
+            <h3> شركة المنقذ</h3> 
             <p>
               ركن الدين شارع الحكيم<br>
               دمشق , سوريا<br><br>
@@ -235,7 +240,9 @@
 
 </footer>
 <!-- End Footer -->
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div id="preloader"></div>
 
 
 <!-- Vendor JS Files -->
@@ -249,7 +256,6 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

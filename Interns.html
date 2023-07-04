@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> المنتجات </title>
+  <title> المتدربين </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,15 +35,18 @@
 <body dir="rtl">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center" dir="rtl" >
+  <header id="header" class="header d-flex align-items-center position-fixed"  >
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar ">
-        <ul class="d-xxl-flex flex-row-reverse ">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="services.html"class="active">المتدربيين</a></li>
-          <li class="dropdown"><a href="products.html"  ><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+     
+      
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <nav id="navbar  " class="navbar ">
+        <ul class="d-lg-flex   ">
+          <li><a href="index.html" >الرئيسية</a></li>
+          <li><a href="interns.html" class="active">المتدربيين</a></li>
+          <li class="dropdown"><a href="products.html"><span>المنتجات</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="productsDetails_1.html">نظام إدارة موارد المؤسسات</a></li>
               <li><a href="productsDetails_2.html">نظام إدارة الخزينة</a></li>
@@ -56,20 +59,15 @@
          
         </ul>
       </nav><!-- .navbar -->
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>الأنظمة المتجددة</h1>
-      </a>
-
-    
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/12.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/blog/blog_3.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
         <h2>المتدربين</h2>
@@ -89,11 +87,11 @@
           <div class="col-lg-5 d-flex flex-column justify-content-center">
             <h3>  محمد قرواني</h3>
             <p>مبرمج ويب / إنشاء وتصميم صفحات ومواقع الويب<br>
-              <ul>
-                <li class="my-3"><strong>العمر :</strong> 22 سنة</li>
-                <li class="my-3"><strong>الجنسية :</strong>سورية</li>
-                <li class="my-3"><strong>رقم الموبايل :</strong>+963 988018951</li>
-                <li class="my-3"><strong> البريد الالكتروني :</strong>mohamadkarawani8@gmail.com</li>
+              <ul >
+                <li class="my-3 info"><strong>العمر :</strong> 22 سنة</li>
+                <li class="my-3 info"><strong>الجنسية :</strong>سورية</li>
+                <li class="my-3 info"><strong>رقم الموبايل :</strong>+963 988018951</li>
+                <li class="my-3 info"><strong> البريد الالكتروني :</strong>mohamadkarawani8@gmail.com</li>
               </ul>
             </p>
             <div class="social-links d-flex mt-3 ">
@@ -251,7 +249,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>الأنظمة المتجددة</h3>
+              <h3> شركة المنقذ</h3> 
               <p>
                 ركن الدين شارع الحكيم<br>
                 دمشق , سوريا<br><br>
@@ -274,8 +272,8 @@
             <ul>
               <li><a href="./index.html">الرئيسية</a></li>
               <li><a href="#services">الخدمات</a></li>
-              <li><a href="blog.html"> المتدربين </a></li>
-              <li><a href="#contact">الاتصال بنا</a></li>
+              <li><a href="Interns.html"> المتدربين </a></li>
+              <li><a href="contact.html">الاتصال بنا</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -326,7 +324,9 @@
 
   </footer>
   <!-- End Footer -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div id="preloader"></div>
 
 
   <!-- Vendor JS Files -->
